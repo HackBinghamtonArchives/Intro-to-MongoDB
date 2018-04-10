@@ -85,12 +85,10 @@ try:
     users = db.users
     print("Connected to collection :)")
 except:
-	print("Could not connect to collection :(")
+    print("Could not connect to collection :(")
 ```
 
 ####Finding a document
-
-
 ```python
 username = input("What is your username? Enter: ")
 
