@@ -42,7 +42,7 @@ Familarity with [Flask](http://flask.pocoo.org/) is helpful, but not essential.
 + Libraries with many popular languages _(Python, Go, Javascript, etc.)_
 
 
-###Concepts
+### Concepts
 
 
 | Term | Meaning |
@@ -53,13 +53,13 @@ Familarity with [Flask](http://flask.pocoo.org/) is helpful, but not essential.
 |Cursors|Basically an index of a collection (Makes MongoDB really fast since it doesn't load the entire collection)|
 
 
-##Using MongoDB with Python
+## Using MongoDB with Python
 
 
 There are many libraries for working with MongoDB in python. For our use, we will use `pymongo`.
 
 
-####Accessing a database
+#### Accessing a database
 
 
 ```python
@@ -77,7 +77,7 @@ try:
 If you installed MongoDB properly and have a Mongo server running, this should print out `Connected to db :)`.
 
 
-####Accessing a collection
+#### Accessing a collection
 
 
 ```python
@@ -88,7 +88,7 @@ except:
     print("Could not connect to collection :(")
 ```
 
-####Finding a document
+#### Finding a document
 ```python
 username = input("What is your username? Enter: ")
 
@@ -100,7 +100,7 @@ else:
     print("Could not find " + username + ".")
 ```
 
-####Inserting a document
+#### Inserting a document
 
 
 ```python
@@ -125,7 +125,7 @@ except:
 ```
 
 
-####Deleting a document
+#### Deleting a document
 
 
 ```python
@@ -145,7 +145,7 @@ else:
 ```
 
 
-####Deleting a collection
+#### Deleting a collection
 
 
 ```python
@@ -157,7 +157,7 @@ except:
 ```
 
 
-####Iterating a collection
+#### Iterating a collection
 
 
 ```python
@@ -170,7 +170,7 @@ except:
 ```
 
 
-##Using MongoDB with Flask
+## Using MongoDB with Flask
 
 
 Now we can take our previous code and use it with a flask app!
@@ -303,13 +303,13 @@ And then to run `FLASK_APP=app.py flask run` from the project directory.
 And that's it! We now have a working flask app that can be used to create and login to accounts. Using Flask you can also setup sessions to keep a user logged in, along with some hashing libraries such as bcrypt to safely store users passwords. 
 
 
-##Conclusion
+## Conclusion
 
 
 MongoDB is a very powerful document database that may be used with a variety of languages. Python is one such language, and as shown above it is very easy to get a simply app up and running. By using Flask with pymongo can setup a simple app to create accounts and login.
 
 
-##Documentation
+## Documentation
 
 
 + [PyMongo](https://api.mongodb.com/python/current/)
