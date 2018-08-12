@@ -306,7 +306,7 @@ And that's it! We now have a working flask app that can be used to create and lo
 ## Conclusion
 
 
-MongoDB is a very powerful document database that may be used with a variety of languages. Python is one such language, and as shown above it is very easy to get a simple app up and running. By using Flask with pymongo can setup a simple app to create accounts and login.
+MongoDB is a very powerful document database that may be used with a variety of languages. Python is one such language, and as shown above it is very easy to get a simple app up and running. By using Flask with pymongo, one can setup a simple app to create accounts and login.
 
 
 ## Documentation
